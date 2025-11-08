@@ -103,5 +103,12 @@ resource "aws_ecs_service" "ecs_service" {
     rollback = true
   }
 
+  force_new_deployment = true
+  capacity_provider_strategy {
+    capacity_provider = "FARGATE"
+    weight            = 1
+    base              = 1
+  }
+
   depends_on = [aws_alb_listener.lb_lsn]
 }
