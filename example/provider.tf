@@ -23,4 +23,3 @@ provider "aws" {
   # default tags  
   default_tags {}
 }
-

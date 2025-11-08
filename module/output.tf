@@ -1,3 +1,3 @@
-output "lb_dns" {
-  value = "${aws_alb.lb.dns_name}:${var.ecs_port}"
+output "dns" {
+  value = "https://${aws_cloudfront_distribution.ecs_cdn.domain_name}"
 }

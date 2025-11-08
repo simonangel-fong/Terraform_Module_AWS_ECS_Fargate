@@ -32,7 +32,6 @@ variable "lb_health_check_path" {
 # ##############################
 # AWS ECS
 # ##############################
-# variable "ecs_template_file" { type = string }
 variable "ecs_task_cpu" { type = number }
 variable "ecs_task_memory" { type = number }
 variable "ecs_svc_desired" { type = number }
@@ -40,3 +39,9 @@ variable "ecs_container_name" { type = string }
 variable "ecs_container_file" { type = string }
 variable "ecs_port" { type = string }
 variable "ecs_protocol" { type = string }
+
+# ##############################
+# AWS CloudFront
+# ##############################
+variable "dns_domain" { type = string }
+variable "cert_domain" { type = string }

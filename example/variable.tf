@@ -46,3 +46,10 @@ variable "ecs_port" { default = "80" }
 variable "ecs_protocol" { default = "HTTP" }
 variable "ecs_container_name" { default = "nginx" }
 variable "ecs_container_file" { default = "./container.json" }
+
+
+# ##############################
+# AWS CloudFront
+# ##############################
+variable "dns_domain" { default = "ecs.arguswatcher.net" }
+variable "cert_domain" { default = "*.arguswatcher.net" }
