@@ -1,5 +1,17 @@
 # Terraform Module: Amazon ECS Fargate
 
+- App
+
+```sh
+cd fastapi
+docker build -t demo_fargate .
+docker run -d --name demo_fargate -p 8000:80 demo_fargate
+docker rm -f demo_fargate
+
+docker tag demo_fargate simonangelfong/demo-fargate-app
+docker push simonangelfong/demo-fargate-app
+```
+
 ```sh
 cd example
 

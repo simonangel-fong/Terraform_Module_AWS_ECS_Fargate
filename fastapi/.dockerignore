@@ -1,0 +1,20 @@
+# Ignore node modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+tmp/
+*.tmp
+
+# Ignore Git-related files
+.git/
+.gitignore
+
+# Ignore the Dockerfile itself (it's still sent to the daemon)
+Dockerfile
+
+
+.env/
+__pycache__/
