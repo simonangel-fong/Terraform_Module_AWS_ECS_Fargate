@@ -66,3 +66,7 @@ resource "aws_cloudfront_distribution" "ecs_cdn" {
     Name = "${var.project}-cloudfront"
   }
 }
+
+output "cdn_domain" {
+  value = aws_cloudfront_distribution.ecs_cdn.domain_name
+}
